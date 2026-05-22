@@ -1,0 +1,163 @@
+{
+  "info": {
+    "_postman_id": "c5e3c2bb-0c2a-46a6-9780-afa86d670b50",
+    "name": "Django To Do API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "22390251",
+    "_collection_link": "https://go.postman.co/collection/22390251-c5e3c2bb-0c2a-46a6-9780-afa86d670b50?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get All To dos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://django-todo-api-1-4sbv.onrender.com/api/todos/",
+          "protocol": "https",
+          "host": [
+            "django-todo-api-1-4sbv",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "todos",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Todo",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Complete Django assessment\",\r\n  \"description\": \"Finish TODO API project\",\r\n  \"is_completed\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://django-todo-api-1-4sbv.onrender.com/api/todos/",
+          "protocol": "https",
+          "host": [
+            "django-todo-api-1-4sbv",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "todos",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get a single to do",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://django-todo-api-1-4sbv.onrender.com/api/todos/4/",
+          "protocol": "https",
+          "host": [
+            "django-todo-api-1-4sbv",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "todos",
+            "4",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update to do",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Updated Todo\",\r\n  \"description\": \"Updated description\",\r\n  \"is_completed\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://django-todo-api-1-4sbv.onrender.com/api/todos/4/",
+          "protocol": "https",
+          "host": [
+            "django-todo-api-1-4sbv",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "todos",
+            "4",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete To Do",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://django-todo-api-1-4sbv.onrender.com/api/todos/4/",
+          "protocol": "https",
+          "host": [
+            "django-todo-api-1-4sbv",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "todos",
+            "4",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "health check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://django-todo-api-1-4sbv.onrender.com/health/",
+          "protocol": "https",
+          "host": [
+            "django-todo-api-1-4sbv",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "health",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
